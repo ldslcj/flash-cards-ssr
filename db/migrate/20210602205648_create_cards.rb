@@ -4,7 +4,7 @@ class CreateCards < ActiveRecord::Migration[6.1]
       t.string :question
       t.string :answer
       t.boolean :answered
-      t.belongs_to :category, null: false, foreign_key: true
+      t.belongs_to :categories, null: false, foreign_key: true
 
       t.timestamps
     end
